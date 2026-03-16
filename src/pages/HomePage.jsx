@@ -85,9 +85,9 @@ export default function HomePage() {
           <Link to="/" className="nav-logo">PetraSpark</Link>
           <div className="nav-links">
             <a href="#how" className="nav-link">How It Works</a>
-            <a href="#why" className="nav-link">Why PetraSpark</a>
-            <a href="#faq" className="nav-link">FAQ</a>
-            <a href="#cta" className="nav-cta">Get Your Free Quote</a>
+            <Link to="/case-studies" className="nav-link">Case Studies</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/quote" className="nav-cta">Get Your Free Quote</Link>
           </div>
         </div>
       </nav>
@@ -105,7 +105,7 @@ export default function HomePage() {
           <R delay={0.4}><p className="hero-sub">Send us your current packaging. We'll quote it in 48 hours — same quality, lower price. If we can't beat it, we'll tell you. No pitch. No strings.</p></R>
           <R delay={0.5}>
             <div className="hero-actions">
-              <a href="#cta" className="btn-glow">See How Much You Can Save <span style={{ fontSize: 18 }}>→</span></a>
+              <Link to="/quote" className="btn-glow">See How Much You Can Save <span style={{ fontSize: 18 }}>→</span></Link>
               <a href="#how" className="btn-ghost">See how it works ↓</a>
             </div>
           </R>
@@ -159,7 +159,7 @@ export default function HomePage() {
               </R>
             ))}
           </div>
-          <R delay={0.3}><div style={{ marginTop: 48 }}><a href="#cta" className="btn-glow">Get Your Free Quote <span style={{ fontSize: 18 }}>→</span></a><p style={{ fontSize: 14, color: 'var(--muted)', marginTop: 14 }}>No commitment. Most brands hear back within 48 hours.</p></div></R>
+          <R delay={0.3}><div style={{ marginTop: 48 }}><Link to="/quote" className="btn-glow">Get Your Free Quote <span style={{ fontSize: 18 }}>→</span></Link><p style={{ fontSize: 14, color: 'var(--muted)', marginTop: 14 }}>No commitment. Most brands hear back within 48 hours.</p></div></R>
         </div>
       </section>
 
@@ -269,8 +269,9 @@ export default function HomePage() {
           <div className="footer-left">© 2026 PetraSpark. Factory-direct packaging for CPG brands.</div>
           <div className="footer-links">
             <Link to="/design" className="footer-link">Design Services</Link>
+            <Link to="/case-studies" className="footer-link">Case Studies</Link>
+            <Link to="/about" className="footer-link">About</Link>
             <a href="#" className="footer-link">Privacy</a>
-            <a href="#" className="footer-link">Terms</a>
           </div>
         </div>
       </footer>
